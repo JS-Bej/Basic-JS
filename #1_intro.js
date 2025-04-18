@@ -10,22 +10,22 @@ let last_name;
 last_name = "Gutierrez";
 
 const secondLastName = "Gonzales";
+//
 
 let fullName1 = "Juan ...";
 let fullName2 = "David ...";
 console.log(fullName1);
 console.log(fullName2);
 
-// Boolean, Symbol, and undefined
+// Boolean, Symbol, undefined and null variables
 var flag = true;
 var symbol = Symbol("My symbol");
 var c = undefined;
-
-// Null
 var y = null;
 
 // Array
-var cars = ['BMW', "Audi", 'Volvo'];
+var cars = ['BMW', "Audi", 'Volvo',"Corvette"];
+
 // Object
 var person = {
     name: "Daniel",
@@ -52,22 +52,22 @@ var person = {
 let a = 3;
 let b = 2;
 let z = a + b;
-console.log("Addition: " + z);
+console.log("Addition: " + z); // Outputs Addition: 5
 
 z = a - b;
-console.log("Subtraction: " + z);
+console.log("Subtraction: " + z); // Outputs Subtraction: 1
 
 z = a * b;
-console.log("Multiplication: " + z);
+console.log("Multiplication: " + z); // Outputs Multiplication: 6
 
 z = a / b;
-console.log("Division: " + z);
+console.log("Division: " + z); // Outputs Division: 1.5
 
 z = a % b;
-console.log("Modulo: " + z);
+console.log("Modulo: " + z); // Outputs Modulo: 1
 
 z = a ** b;
-console.log("Exponentiation: " + z);
+console.log("Exponentiation: " + z); // Outputs Exponentiation: 9
 
 // Undefined variables
 let var1, var2;
@@ -75,29 +75,31 @@ console.log(var1);
 
 // Pre-increment
 let i = 0;
-console.log(++i);
+console.log(++i); // Outputs 1
 
 // Post-increment
-console.log(i++);
-console.log(i);
+i=0
+console.log(i++); // Outputs 0
+console.log(i); // Outputs 1
 
 // Pre-decrement
 let p = 1;
-console.log(--p);
+console.log(--p); // Outputs 0
 
 // Post-decrement
-console.log(p--);
-console.log(p);
+p = 1
+console.log(p--); // Outputs 1
+console.log(p); // Outputs 0
 
 // Ternary operator examples
 let result1=5
 result1 = (result1 > 2) ? "true" : "false";
-console.log(result1);
+console.log(result1); // Outputs "true"
 
 let result2=5
 result2 = (result2 < 3) ? "true" : "false";
-console.log(result2);
+console.log(result2); // Outputs "false"
 
 let result3 = 10
 result2 = (result3 % 2 == 0) ? "Even" : "Odd";
-console.log(result3);
+console.log(result3); // Outputs "Even"

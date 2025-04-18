@@ -1,39 +1,23 @@
-//par o impar
-let a=3;
-if (a%2 == 0)
-{
-console.log("el numero "+a+" es par")
-}
-else
-{
-    console.log("el numero "+a+" es impar")
+// Even or odd
+let a = 3;
+if (a % 2 == 0) {
+    console.log("The number " + a + " is even");
+} else {
+    console.log("The number " + a + " is odd");
 }
 
-//Triangulo
-let lado=3;
-let lado2=3;
-let lado3=3;
-if ((lado == lado2 || lado2 == lado3 || lado == lado3) && (lado != lado2 || lado2 != lado3 || lado != lado3 ))
-{
-    console.log("Triangulo isoceles")
-}
-if (lado != lado2 && lado2 != lado3 && lado !=lado3)
-{
-    console.log("Triangulo escaleno")
-}
-if (lado == lado2 && lado2 == lado3 && lado == lado3)
-    {
-        console.log("Triangulo equilatero")
-    }
+// Triangle
+let side1 = 3;
+let side2 = 3;
+let side3 = 3;
 
-//# primo o no
-let num=11;
-let num2;
-if (num/num== 1 && num/1==num && num%num2 != 0)
-{
-    console.log("Numero es primo")
+if ((side1 == side2 || side2 == side3 || side1 == side3) && 
+    (side1 != side2 || side2 != side3 || side1 != side3)) {
+    console.log("Isosceles triangle");
 }
-if (num/num== 1 && num/1==num && num%num2 == 0)
-{
-    console.log("Numero no es primo")
+if (side1 != side2 && side2 != side3 && side1 != side3) {
+    console.log("Scalene triangle");
+}
+if (side1 == side2 && side2 == side3 && side1 == side3) {
+    console.log("Equilateral triangle");
 }

@@ -1,20 +1,20 @@
 let boton = document.querySelector("#btnp")
 
-boton.addEventListener("click", respuestaClick)
-function respuestaClick(){
-    alert("Respuesta de evento")
+boton.addEventListener("click", clickResponse)
+function clickResponse(){
+    alert("Event response")
 }
-function onClicks(){alert("Respuesta 2")}
-let texto = document.querySelector("#text")
-texto.addEventListener("click", cha)
+function onClicks(){alert("2nd event response")}
+let text = document.querySelector("#text")
+text.addEventListener("click", cha)
 function cha(){
-    return(this.innerHTML = 'Hola')
+    return(this.innerHTML = 'Hello!')
   }
 
   function mOver(obj) {
-    obj.innerHTML = "Hola"
+    obj.innerHTML = "Hello!"
   }
   
   function mOut(obj) {
-    obj.innerHTML = "Adios..."
+    obj.innerHTML = "Goodbye..."
   }

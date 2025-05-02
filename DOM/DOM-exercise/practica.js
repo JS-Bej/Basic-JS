@@ -1,59 +1,59 @@
-// 1. Devuelve por consola el elemento asociado al id “descripcion”. Utilice el método getElementById()
-var descripcion = document.getElementById("descripcion");
-console.log(descripcion);
+// 1. Log the element associated with the id "description" to the console. Use the getElementById() method.
+var description = document.getElementById("description");
+console.log(description);
 
-// 2. Devuelve por consola el elemento asociado al id “descripcion”. Utilice el método querySelector()
-var descripcionQuery = document.querySelector("#descripcion");
-console.log(descripcionQuery);
+// 2. Log the element associated with the id "description" to the console. Use the querySelector() method.
+var descriptionQuery = document.querySelector("#description");
+console.log(descriptionQuery);
 
-// 3. Devuelve por consola todos los elementos li en forma de lista. Utilice el método querySelectorAll()
+// 3. Log all "li" elements as a list to the console. Use the querySelectorAll() method.
 var liElements = document.querySelectorAll("li");
 console.log(liElements);
 
-// 4. Devuelve por consola la cantidad de elementos listados con li con el siguiente mensaje.
-console.log(`Hay ${liElements.length} elementos en la lista.`);
+// 4. Log the number of "li" elements with the following message.
+console.log(`There are ${liElements.length} items in the list.`);
 
-// 5. Genere una lista de todos los elementos li y recorra la lista con ayuda de un ciclo.
+// 5. Generate a list of all "li" elements and iterate through the list using a loop.
 liElements.forEach((li, index) => {
-    console.log(`Elemento ${index + 1}: ${li.textContent}`);
+    console.log(`Item ${index + 1}: ${li.textContent}`);
 });
 
-// Crear un nuevo elemento de párrafo
-var nuevoParrafo = document.createElement("p");
+// Create a new paragraph element
+var newParagraph = document.createElement("p");
 
-// Agregar el texto al párrafo
-nuevoParrafo.textContent = "En el año 2008 la competición fue llevada a cabo en el Reino Unido en la Universidad deReading en donde se presentaron 13 candidatos de los cuales se seleccionaron 6 programasfinalistas: Alice, Brother Jerome, Elbot, Eugene Goostman, Jabberwacky y Ultra Hal. Los seisprogramas tuvieron que interactuar con los 12 jueces manteniendo una conversaciónmediante un computador durante cinco minutos en donde se plantean una serie de preguntascon el fin de determinar si es un computador o un humano. En la edición del 2008 ningunologré pasar el Test de Turing, aunque el ganador de la medalla de bronce fue el programaElbot, que estuvo muy cerca de pasar esta prueba ya que consiguió convencer a 3 de los 12jueces, es decir el 25% de los jueces pensó que estaba conversando con un ser humano.";
+// Add text to the paragraph
+newParagraph.textContent = "In 2008, the competition was held in the United Kingdom at the University of Reading, where 13 candidates participated, and 6 finalist programs were selected: Alice, Brother Jerome, Elbot, Eugene Goostman, Jabberwacky, and Ultra Hal. The six programs had to interact with 12 judges, maintaining a conversation via a computer for five minutes, during which a series of questions were asked to determine whether the participant was a computer or a human. In the 2008 edition, none managed to pass the Turing Test, although the bronze medal winner was the Elbot program, which came very close to passing the test as it convinced 3 out of the 12 judges, meaning 25% of the judges thought they were conversing with a human.";
 
-// Agregar el nuevo párrafo al final del cuerpo del documento
-document.body.appendChild(nuevoParrafo);
+// Add the new paragraph to the end of the document body
+document.body.appendChild(newParagraph);
 
-// Crear un nuevo elemento de enlace
-var nuevoEnlace = document.createElement("a");
-nuevoEnlace.href = "#";
-nuevoEnlace.innerHTML = "Enlace principal";
+// Create a new link element
+var newLink = document.createElement("a");
+newLink.href = "#";
+newLink.innerHTML = "Main Link";
 
-// Agregar el nuevo enlace al final del cuerpo del documento
-document.body.appendChild(nuevoEnlace);
+// Add the new link to the end of the document body
+document.body.appendChild(newLink);
 
-// Crear un nuevo elemento de título
-var titulo = document.createElement("h2");
-titulo.innerHTML = "Meses del año";
+// Create a new title element
+var title = document.createElement("h2");
+title.innerHTML = "Months of the Year";
 
-// Agregar el título al final del cuerpo del documento
-document.body.appendChild(titulo);
+// Add the title to the end of the document body
+document.body.appendChild(title);
 
-// Crear un nuevo elemento de lista no ordenada
-var lista = document.createElement("ul");
+// Create a new unordered list element
+var list = document.createElement("ul");
 
-// Crear un arreglo con los meses del año
-var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+// Create an array with the months of the year
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-// Recorrer el arreglo y agregar cada mes a la lista
-meses.forEach(function (mes) {
+// Iterate through the array and add each month to the list
+months.forEach(function (month) {
     var li = document.createElement("li");
-    li.innerHTML = mes;
-    lista.appendChild(li);
+    li.innerHTML = month;
+    list.appendChild(li);
 });
 
-// Agregar la lista al final del cuerpo del documento
-document.body.appendChild(lista);
+// Add the list to the end of the document body
+document.body.appendChild(list);
